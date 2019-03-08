@@ -301,7 +301,7 @@ Alle Inhalte sind in Markdown geschrieben und werden als HTML dargestellt.
 
 * Code-Block:
     `````md
-    ```py
+    ```python
     # Codeblock
     import sys
 
@@ -319,7 +319,12 @@ Alle Inhalte sind in Markdown geschrieben und werden als HTML dargestellt.
     * Auf...
     * ...zählung
     ```
-
+* Numerierte Aufzählung
+    ```md
+    1. Eins
+    2. Zwei
+    3. Drei
+    ```
 * ToDos:
     ```md
     - [ ] ToDo
@@ -367,24 +372,94 @@ Alle Inhalte sind in Markdown geschrieben und werden als HTML dargestellt.
 
 ---
 
-# Statische Inhalte
+# Markdown-Elemente 7
+
+* Links
+    ```md
+    https://wikipedia.org
+    [Wikipedia](https://wikipedia.org)
+    [Wikipedia](https://wikipedia.org "The Free Encyclopedia")
+    [Wikipedia][WikiPediaSeite]
+    [Wikipedia][1]
+
+    ...
+
+    [WikiPediaSeite]: https://wikipedia.org
+    [1]: https://wikipedia.org
+    ```
+
+---
+
+# Markdown-Elemente 8
 
 * Das Verzeichnis `static` wird zum Speichern statischer Inhalte verwendet
 * Auch Unterverzeichnisse möglich
 * Beispiel: Lege Bilddatei unter `static/img/igel.jpg` ab
 * Referenziere diese in einer neuen Seite: `hugo new post/igel.md`
 
+```md
+Hier ist ein Bild eines Igels:
+![Alt Text für Barrierefreiheit!](/img/igel.jpg "Mouseover-Text")
+
+Das gleiche Bild:
+![alt text][igel]
+
+...
+
+[igel]: /img/igel.jpg "Mouseover-Text"
 ```
----
-title: "Igel"
-date: 2019-03-08T17:08:03+01:00
-draft: false
+
 ---
 
-# Igel sind interessante Tiere
+# Statische Seite bei github.com
 
-Hier ist ein Bild eines Igels ![Bild eines Igels](/img/igel.jpg)
-```
+1. Auf [github.com](https://github.com) anmelden
+2. Projekt erstellen (public)
+3. In `config.toml` folgenden Wert setzen: `canonifyURLs = true`
+4. Hugo generieren: `hugo`
+5. `public` Verzeichnis als Repository intialisieren: In Verzeichnis: `git init .`
+6. Alle Dateien der Verzeichnisses rekursiv hinzufügen: `git add .`
+7. Commiten: `git commit -am "Initial commit"`
+8. Serververbindung herstellen: `git remote add origin git@github.com:derphilipp/example_page.git` (Hier Pfad von github einstellen)
+9. Daten auf Server pushen `git push -u origin master`
+10. Einstellung auf Github:
+  * Settings
+  * Github Pages
+  * Source auf `master branch` setzen
+
+---
+
+
+# Statische Seite: Tipps
+
+* Github liefert direkt mit HTTPS aus
+* Eigene Domains können eingetragen werden
+* Supergünstige eigene Homepage:
+  * Seite bei Github.com hosten
+  * Blanke Domain z.B. bei Amazon bestellen
+  * Einrichten einer Route der eigenen Domain auf die statische Seite
+
+---
+
+# Fazit statische Seiten Pro
+
+* Statische Webseiten können genau so schick sein wie dynamische
+* Eigene Homepage kann sehr kostengünstig erstellt werden
+* Markdown zu HTML ist ein einfacher und schneller Weg zu arbeiten
+* Hosting bei github.com erspart sämtliche Hostingkosten
+* Keine dauerhafte Pflege
+* Auch bei anderen Hosts gibt es günstige Angebote (oft inklusive Domain)
+* Sicherheitsaspekt liegt komplett beim Hosting-Anbieter
+
+---
+
+# Fazit statische Seiten Contra
+
+* Kein einfaches Hochladen von Photos vom Handy direkt auf die Seite
+* Mobiles Editieren nicht/schwer möglich
+* Zum Editieren der Seite stets der Computer notwendig
+* Kein Interaktivität (Gästebuch, Bildupload, Kommentare) möglich
+* Metriken nur über Webserver erfassbar (z.B. Seitenabrufe)
 
 ---
 
