@@ -206,6 +206,66 @@ Philipp Weißmann und Jürgen Krauß
 
 ---
 
+# Praxis Hugo
+
+---
+
+# Installation
+* Paketmanager: `apt install hugo`, `pacman S hugo`, etc.
+* Homebrew: `brew install hugo`
+* Installationsanleitung unter Windows: [https://gohugo.io/getting-started/installing/](https://gohugo.io/getting-started/installing/)
+
+---
+
+# Starten einer neuen Seite
+
+* `hugo new site hugo-webseite`
+* Theme installieren,
+  * Hier: [Theme Ananke](https://github.com/budparr/gohugo-theme-ananke/archive/2.40.zip)
+  * Entpacken nach *themes/ananke* (ggf. Verzeichnisname ändern)
+* Anpassen von `config.toml`
+
+```
+baseURL = "http://meine-wunderbare-webseiten-url.de/"
+languageCode = "en-us" # Spracheinstellung für das Theme
+title = "Meine wunderbare Homepage"
+theme = "ananke"
+```
+
+* Praxistipp: Theme via Git als Submodul einbinden!
+
+---
+
+# Erster Eintrag
+
+* Erstellen einer ersten Seite aus einem Template
+* `hugo new posts/hugo.md`
+* Inhalt schon durch Template in Teilen vorgegeben:
+
+```
+---
+title: "Hugo"
+date: 2019-03-08T15:53:00+01:00
+draft: true
+---
+
+# Hugo
+
+Dies ist meine Webseite.
+Alle Inhalte sind in Markdown geschrieben und werden als HTML dargestellt.
+```
+
+---
+# Webseite testen
+
+* `hugo serve -D`
+* Starten Webserver zum lokalen Testen der Webseite, inklusive "Drafts"
+* Zum öffnen Link auf der Kommandozeile folgen: http://localhost:1313
+* Erstellt Seiten bei Änderungen sofort neu (auch Warnungen auf der Ausgabe beachten!)
+
+---
+
+
 # Content here
 
 ---
