@@ -256,6 +256,7 @@ Alle Inhalte sind in Markdown geschrieben und werden als HTML dargestellt.
 ```
 
 ---
+
 # Webseite testen
 
 * `hugo serve -D`
@@ -265,6 +266,127 @@ Alle Inhalte sind in Markdown geschrieben und werden als HTML dargestellt.
 
 ---
 
+# Webseite erstellen
+
+* `hugo`
+* Erstellt in `public` Verzeichnis HTML Seiten
+* Beinhaltet (je nach Theme) jedoch oft absolute Pfade
+
+---
+
+# Markdown-Elemente 1
+
+* Überschriften:
+```md
+# Überschrift Level 1
+## Überschrift Level 2
+### Überschrift Level 3
+```
+
+---
+
+# Markdown-Elemente 2
+
+* Formatierung:
+```md
+*Kursiv*
+**Fett**
+~~Durchgestrichen~~
+`Code`
+```
+
+---
+
+# Markdown-Elemente 3
+
+* Code-Block:
+    `````md
+    ```py
+    # Codeblock
+    import sys
+
+    def goodbye():
+        sys.exit(0)
+    ```
+    `````
+
+---
+
+# Markdown-Elemente 4
+
+* Aufzählung
+    ```md
+    * Auf...
+    * ...zählung
+    ```
+
+* ToDos:
+    ```md
+    - [ ] ToDo
+    - [ ] Listen
+    - [x] Eintrag
+    ```
+
+---
+
+# Markdown-Elemente 5
+
+* Tabellen
+```md
+| Tabelle   | Inhalt |
+| --------- | ------ |
+| Eintrag 1 | Wert 1 |
+| Eintrag 2 | Wert 2 |
+```
+
+* Tipp: Markdown Plugins für Editoren sorgen für einfaches schreiben von Tabellen (z.B. Visual Studio Code)
+
+---
+
+# Markdown-Elemente 6
+
+
+* Definitionen
+    ```md
+    Definition
+    : genaue Bestimmung eines Begriffes
+
+    Beispiel
+    : typischer Einzelfall
+    ```
+
+* Fußnoten
+    ```md
+    Fußnote.[^1]
+
+    ...
+
+    [^1]: Fußnotentext
+    ```
+
+
+---
+
+# Statische Inhalte
+
+* Das Verzeichnis `static` wird zum Speichern statischer Inhalte verwendet
+* Auch Unterverzeichnisse möglich
+* Beispiel: Lege Bilddatei unter `static/img/igel.jpg` ab
+* Referenziere diese in einer neuen Seite: `hugo new post/igel.md`
+
+```
+---
+title: "Igel"
+date: 2019-03-08T17:08:03+01:00
+draft: false
+---
+
+# Igel sind interessante Tiere
+
+Hier ist ein Bild eines Igels ![Bild eines Igels](/img/igel.jpg)
+```
+
+---
 
 # Content here
 
