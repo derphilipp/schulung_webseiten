@@ -65,42 +65,6 @@ Philipp Weißmann und Jürgen Krauß
 
 ---
 
-# Architektur Beispiel 1: Synchronisierte Einkaufsliste
-
-* Frontend: *vue*
-* NoSQL Datenbank: *mongodb*
-* Datenbank-Cache: *redis*
-* Application-Server: *nodejs*
-* Reverse-Proxy: *nginx*
-
----
-
-# Architektur Beispiel 2: Wordpress Seite
-
-* Frontend: *jquery*
-* Relationale Datenbank: *mariadb*
-* Webserver: *apache*  mit *modphp*
-
----
-
-# Architektur Beispiel 3: Statische Webseite
-
-* Frontend: *react*
-* Webserver: *nginx*
-
----
-
-# Statische Webseiten
-
-* Vorteile:
-  * Ein Angriffsvektor weniger
-  * Hosting extrem günstig/einfach
-  * Keine Updates notwendig
-  * Backup & Umzug extrem einfach
-  * Enorm gute Performance
-
----
-
 # Application-Server
 
 * In Beliebiger Sprache geschriebenes Programm
@@ -132,23 +96,97 @@ Philipp Weißmann und Jürgen Krauß
 * Beispiele: nginx, træfik
 
 ---
-# Alte Lösungen
+
+
+# Architektur Beispiel 1: Synchronisierte Einkaufsliste
+
+* Frontend: *vue*
+* NoSQL Datenbank: *mongodb*
+* Datenbank-Cache: *redis*
+* Application-Server: *nodejs*
+* Reverse-Proxy: *nginx*
+
+---
+
+# Architektur Beispiel 2: Wordpress Seite
+
+* Frontend: *jquery*
+* Relationale Datenbank: *mariadb*
+* Webserver: *apache*  mit *modphp*
+
+---
+
+# Architektur Beispiel 3: Statische Webseite
+
+* Frontend: *react*
+* Webserver: *nginx*
+
+---
+
+# Statische Webseiten
+
+* Motivation:
+  * Ein Angriffsvektor weniger
+  * Hosting extrem günstig/einfach
+  * Keine Updates der Homepage notwendig
+  * Backup & Umzug extrem einfach
+  * Enorm gute Performance
+
+---
+
+# Statische Webseite erstellen
+## Möglichkeiten
+
+* HTML Seite selbst schreiben
+  * Tiefes Wissen über HTML notwendig
+  * Anpassungen dauern sehr lange
+  * Läuft in jedem (aktuellen) Browser
+  * Empfehlung: *selfhtml*
+* Seite mit JavaScript Framework schreiben
+  * Wissen über JavaScript Framework notwendig
+  * Läuft nicht in Browsern mit deaktivierem JavaScript
+  * Empfehlung: *vue*
+* Seite generieren
+  * Erstellt aus Daten + Theme eine statische Webseite
+  * Praktisch kein Wissen über HTML oder JavaScript notwendig
+  * Erstellen & erweitern extrem schnell
+  * HTML / JavaScript ergebnis je nach Generator unterschiedlich
+  * Empfehlung: *hugo*
+
+---
+
+# Weitere Möglichkeiten 1
+
 ## WYSIWYG
 
-z.B.
-* Frontpage
-* iWeb
-* Microsoft Word
-* LibreOffice/Openoffice Writer
+* "What you see is what you get"
+* "Zusammenklicken" von Inhalten / Seitenelementen
+* Beispiele: Frontpage, iWeb, Microsoft Word, LibreOffice/Openoffice Writer
+* Ergebnis sieht je nach Browser oft sehr unterschiedlich aus
+* Zumeist sehr unflexibel, inkonsistent, keine modernen Bedienelemente
+* Nahezu ausgestorben
+
+---
+# Weitere Möglichkeiten 2
+
+## Homepage-Generatoren
+
+* Hosting-Angebote erlauben das Zusammenklicken von Webseiten
+* Zumeist bekommt man keine HTML Dateien, sondern nur das komplette Hosting
+* Umziehen damit praktisch nicht möglich
+* Oft keine individuellen Themes/Erweiterungen möglich - oder diese kosten extra
 
 ---
 
 # Neue Lösungen
 ## Statische Webseiten Generatoren
 
-* Hugo
-* Pelican
-* Jekyll
+* Markdown Homepage-Generatoren
+* Erstellen aus Markdown statische Webseiten
+* Für Kurs relevant: *hugo*
+* Weitere populäre Generatoren:
+  * Pelican (Python)
+  * Jekyll (Ruby)
 
 ---
 
