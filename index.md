@@ -439,7 +439,7 @@ Das gleiche Bild:
    * Custom Domain
 4. Für Subdomain (z.B. `www.beispiel.de`) einen `CNAME` eintrag auf `BENUTZERNAME.github.io` setzen
 5. Für Domain (z.B. `beispiel.de`) einen `A` oder `ALIAS` / `ANAME` Eintrag machen. Aktuelle IP Adressen von Github auf den Github Hilfeseiten abrufen
-6. Nach 24 Stunden funktioniert auch HTTPS Transport
+6. Nach (spätestens) 24 Stunden funktioniert auch HTTPS Transport
 
 ---
 
