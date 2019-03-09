@@ -411,10 +411,10 @@ Das gleiche Bild:
 
 ---
 
-# Statische Seite bei github.com
+# Statische Seite bei github.com 1
 
 1. Auf [github.com](https://github.com) anmelden
-2. Projekt erstellen (public)
+2. Projekt erstellen (public). Name: `BENUTZERNAME.github.io`
 3. In `config.toml` folgenden Wert setzen: `canonifyURLs = true`
 4. Hugo generieren: `hugo`
 5. `public` Verzeichnis als Repository intialisieren: In Verzeichnis: `git init .`
@@ -429,6 +429,19 @@ Das gleiche Bild:
 
 ---
 
+# Statische Seite bei github.com 2
+
+1. Wichtig: Geht nur mit Projektname `BENUTZERNAME.github.io`
+2. Checken, ob sie Seite auch unter https://BENUTZERNAME.github.io erreichbar ist
+3. Auf Github die eigene Domain (oder Subdomain) eintragen:
+   * Settings
+   * Github Pages
+   * Custom Domain
+4. Für Subdomain (z.B. `www.beispiel.de`) einen `CNAME` eintrag auf `BENUTZERNAME.github.io` setzen
+5. Für Domain (z.B. `beispiel.de`) einen `A` oder `ALIAS` / `ANAME` Eintrag machen. Aktuelle IP Adressen von Github auf den Github Hilfeseiten abrufen
+6. Nach 24 Stunden funktioniert auch HTTPS Transport
+
+---
 
 # Statische Seite: Tipps
 
