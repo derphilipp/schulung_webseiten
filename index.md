@@ -720,11 +720,220 @@ Für die Entwicklungsumgebung zu Hause:
 **Backend** <= Arbeit und Content-pflege „hinter den Kulissen“
 * [http://127.0.0.1/wp-admin](http://127.0.0.1/wp-admin)
 
+???
+Im Frontend: Hier sehen wir erstmal nicht viel. Es gibt:
+* einen Titel
+* einen "Hallo Welt"-Beitrag
+* ein paar Links
+* einen Bereich mit weiteren Links
+* ein Suchfeld
+=> relativ langweilig für den Anfang
+
+Schauen wir lieber mal ins Backend.
+(Wechseln über die Leiste oben)
+
 ---
 
+# Erste Schritte 
+## Im Backend
 
+Elemente eines Beitrags:
+* Titel
+* Text und Bild (Blöcke)
+* Kategorien
+* Schlagwörter
+* Beitragsbild
+* Auszug
+* Meta-Informationen:
+  * Link
+  * Veröffentlichungsdatum
 
+---
 
+# Erste Schritte 
+## Im Backend
+
+Elemente einer Seite:
+* Titel
+* Text und Bild (Blöcke)
+* Beitragsbild
+* Meta-Informationen:
+  * Link
+  * Veröffentlichungsdatum
+
+---
+
+# Erste Schritte 
+## Im Backend
+
+In ähnlicher Form kann es auch weitere Inhaltstypen geben, die sogenannten `Custom Post Types` – die unterscheiden sich jeweils in den Feldern, die hier auszufüllen sind, im Design und je nach Theme auch in der Darstellung. Je nach Plugins und Themes könnten das beispielsweise sein:
+* Portfolio
+* Referenzen
+* Kundenstimmen
+* Podcast-Episoden
+* und, und, und
+
+Mehr dazu [hier](https://www.drweb.de/wordpress-intern-einstieg-custom-post-types-50402/)
+
+---
+
+# Erste Schritte
+## Aufgabe:
+* Anlegen und veröffentlichen **einer Seite**
+* Anlegen und veröffentlichen von **mindestens zwei Beiträgen**, inklusive:
+  * Beitragsbild
+  * Kategorie
+  * Schlagwörter
+
+Ideenlos beim Text? 
+  => [Franconian Ipsum](https://www.frankenipsum.de/index.php)
+  
+???
+Danach Check im Frontend: Wie sehen Seiten aus, wie Beiträge, was sind Kategorien, wie sehen Schlagwort-rchive aus, etc.
+
+---
+
+# Ein Wordpress? Mein Wordpress! 
+## Level 0: Einstellungen  
+
+**Aufgabe:**
+* Erkunden der Einstellungen
+* Was würden Sie spontan ändern? Warum?
+
+???
+Permalinks, Umstellung auf SSL, Diskussion (besonders im Hinblick auf die DSGVO interessant), Datenschutz
+
+---
+
+# Ein Wordpress? Mein Wordpress! 
+## Level 1: Customizer
+[http://127.0.0.1/wp-admin/customize.php](http://127.0.0.1/wp-admin/customize.php)
+![Customizer](https://es-ist-ein-krauss.de/wordpress-schulung/06_customizer.png)]
+
+???
+Erstmal nur: 
+* Webseiten-Informationen
+* Farben
+* Widgets
+* Startseiten-Einstellungen
+
+Für später:
+* Zusätzliches CSS
+* Menüs
+
+??? 
+Teilweise dieselben Einstellungen wie eben
+
+---
+
+# Ein Wordpress? Mein Wordpress! 
+## Level 1: Customizer
+
+**Aufgabe:**
+* ein Logo hinzufügen (Beispieldatei gibt es hier)
+* Linkfarbe ändern
+* ein Schlagwörter - und ein Kalender-Widgets hinzufügen
+
+---
+
+# Ein Wordpress? Mein Wordpress! 
+## Level 2: Themes
+.right[![Coral Dark](https://es-ist-ein-krauss.de/wordpress-schulung/07_coral_dark.png)]
+**Aufgabe:**
+* Coral Dark-Theme [installieren](http://127.0.0.1/wp-admin/theme-install.php?search=coral%20dark)
+* Seite "Customizen" 
+
+---
+
+# Ein Wordpress? Mein Wordpress! 
+## Level 3: Plugins
+
+**Aufgabe:**
+* Suchen, installieren und testen des Classic Editor-Plugins. Was macht das Plugin?
+* Suchen, installieren und aktivieren eines Maintenance-Modus-Plugins.
+
+**Bonusaufgabe:**
+* Suchen, installieren und testen eines Plugins, das Bilder beim Upload automatisch komprimiert.
+
+???
+Anekdote zum Classic Editor, Hinweis, dass viele Plugins nach wie vor nur mit dem Classic Editor funktionieren
+Erklärung, warum Maintenance-Modus
+
+---
+
+# Ein Wordpress? Mein Wordpress! 
+## Level 3: Plugins
+Essentielle Plugins:
+* Backup
+* Sicherheit
+* Cache
+* SEO
+* Anti-Spam
+* DSGVO
+
+---
+
+# Ein Wordpress? Mein Wordpress! 
+## Level 4: Page Builder
+
+---
+
+# Ein Wordpress? Mein Wordpress! 
+## Level 5: Child-Themes
+
+---
+
+# DSGVO
+
+* Datenschutzerklärung/Impressum
+* SSL
+* Kommentare (Datenschutzerklärung, IP anonymisieren)
+* externe Ressourcen
+* Analytics, Matomo
+
+---
+
+# Wordpress sicher machen
+## Level 1
+
+* sichere Passwörter verwenden
+* Benutzername ≠ admin (oder root oder Teil der Domain)
+* regelmäßige Updates 
+* Plugins und Themes nur aus vertrauenswürdigen Quellen installieren
+* eingeschränkte Rechte für weitere Nutzer
+
+---
+
+# Wordpress sicher machen
+## Level 2
+
+* regelmäßige Backups (z. B. über den Hoster oder mit [UpdraftPlus](https://de.wordpress.org/plugins/updraftplus/))
+* 2FA = Zweifaktorauthentifi-zierung (etwa mit [Two Factor](https://de.wordpress.org/plugins/two-factor/))
+* Wordpress-Firewall/-Sicherheitsplugin (z. B. [Wordfence](https://de.wordpress.org/plugins/wordfence/), [Sucuri Security](https://de.wordpress.org/plugins/sucuri-scanner/) oder [All In One WP Security & Firewall](https://de.wordpress.org/plugins/all-in-one-wp-security-and-firewall/))
+
+---
+
+# Wordpress sicher machen
+## Level 3
+
+* Login-Seite umbenennen (z. B. mit [WPS Hide Login](https://wordpress.org/plugins/wps-hide-login/) – vorher Backup!)
+* Geoblocking von Logins (etwa per [IP Geo Block](https://de.wordpress.org/plugins/ip-geo-block/))
+
+---
+
+# Wordpress "sicher" machen
+## Bonus
+
+* Antispam mit [AntispamBee](https://de.wordpress.org/plugins/antispam-bee/) 
+
+---
+
+# Ausblick
+* SEO
+* Theme- und Plugin-Entwicklung (per Boilerplates)
+* Wordpress-Kodex
+
+---
 
 # Kontakt:
 ## Philipp Weißmann
