@@ -476,9 +476,255 @@ Das gleiche Bild:
 
 ---
 
-# Content here
+# Wordpress ist:
+
+* ein Content-Management-System (CMS) mit Fokus auf das Bloggen
+* entwickelt von der Wordpress Foundation
+* 2003 erstmals erschienen
+* open source ("GPL-2.0+"-Lizent)
+* erhältlich in 62 Sprachen
 
 ---
+
+# Wordpress ist:
+
+![Schweizer Taschenmesser](https://media.giphy.com/media/xT5LMxAxpGSb5AZt8A/giphy.gif)
+
+---
+
+## 32,8 Prozent aller Webseiten basieren auf Wordpress
+
+(*Quelle: W3Techs (abgerufen am 11.1.2019), https://w3techs.com/technologies/overview/content_management/all*) 
+
+???
+* Spricht irgendwie für WordPress
+* Spricht aber auch irgendwie dagegen
+* Andere sind Joomla (2. Platz mit 6 Prozent), Drupal, Typo 3, blankes HTML …
+* Knapp 60 Prozent der Webseiten, die ein CMS nutzen, verwenden Wordpress
+
+---
+
+# Wofür sich Wordpress eignet
+
+* Blogs
+* private Webseiten mit regelmäßigen Updates
+* kleine Shops
+* Webprojekte mit mehreren Beteiligten in kleinem und mittlerem Umfang
+
+---
+
+# Wofür sich Wordpress nicht eignet
+
+* große, internationale Unternehmensseiten
+* komplexe Shop-Systeme mit ERP-Anbindungen
+* statische Webprojekte
+* Seiten mit besonderen spezifischen Anforderungen
+* Arbeiten mit vielen Medien/Dokumenten
+* Foren mit vielen Benutzern
+
+---
+
+# Grundlagen
+## Aufbau
+
+### 1. Wordpress
+=> Core-Dateien und Datenbank
+### 2. Inhalte
+=> Seiten, Beiträge, Medien
+### 3. Design
+=> Themes
+### 4. Funktionalitäten
+=> Plugins
+
+
+---
+
+# Grundlagen
+## Aufbau
+.right[![Dateien und Verzeichnisse](https://es-ist-ein-krauss.de/wordpress-schulung/01_files_and_folders.png)]
+### 1. Wordpress
+Neben den Core-Dateien, ist vor allem ein Verzeichnis für uns interessant:
+
+wp-content/
+* Plugins
+* Themes
+* Uploads
+
+---
+
+# Grundlagen
+## Aufbau
+.right[![Datenbank](https://es-ist-ein-krauss.de/wordpress-schulung/02_database.png)]
+### 1. Wordpress
+Die Datenbank enthält:
+* Einstellungen
+* Inhalte
+* Beiträgestexte
+* Nutzer
+* Meta-Informationen
+
+---
+
+# Grundlagen
+## Aufbau
+### 2. Inhalte
+
+**Seiten:**
+* feststehende Inhalte
+* Evergreens mit oder ohne regelmäßigem Aktualisierungsbedarf\*
+* Beispiel: _Impressum_
+
+**Beiträge:**
+* regelmäßige Informationen
+* Content mit begrenzter Halbwertszeit\*
+* Beispiel: _Die 5 besten Death-Metal-Bands aus Franken_
+
+???
+\** mit Ausnahmen – Seiten: ohne Datumsangabe stets aktuelle – Beiträge: mit Erstellungsdatum, aber bei Bedarf Aktualisierungen
+
+---
+
+# Grundlagen
+## Aufbau
+.right[![Design](https://es-ist-ein-krauss.de/wordpress-schulung/03_theme.png)]
+### 3. Design
+sogenannte Themes bestimmen:
+* Look and Feel
+* Farben, Schriften und Hintergründe
+* Anordnung der Elemente
+* zum Teil auch: Funktionalitäten
+
+---
+
+# Grundlagen
+## Aufbau
+.right[![Vielseitigkeit](https://i.giphy.com/media/1hBWtlec4aAb37ggn8/giphy.webp)]
+### 4. Funktionalitäten
+aktuell\* mehr als **_54.200 Plugins_** erweitern den Funktionsumfang – und verwandeln Wordpress in:
+* Forum oder soziales Netzwerk
+* Online-Shop
+* Wiki
+Crowdfunding-Plattform
+* Buchungssystem 
+* …
+
+\*_Quelle: [Wordpress.org](https://wordpress.org/plugins/) (abgerufen am 11.1.2019)_
+
+---
+
+# Grundlagen
+## Aufbau
+### Außerdem
+
+Viele Seiten bringt Wordpress automatisch mit:
+* Kategorieübersicht
+* 404-Fehler
+* Suchergebnisse
+* etc.
+
+Dazu später mehr.
+
+---
+
+# Erste Schritte
+## Installation
+--
+
+### Voraussetzungen
+* dynamischer Webspace
+  * Apache oder Nginx
+  * PHP (> 7.3)
+
+* Datenbank
+  * MySQL (> 5.6)
+  * oder: MariaDB (> 10.0)
+
+---
+
+# Erste Schritte
+## Installation
+### Voraussetzungen
+* eigener Server (zu Hause oder im Rechenzentrum)
+* allgemeine Hoster (1 & 1, all-inkl, Strato, etc.)
+* spezialisierte Bloghoster (Raidboxes, wordpress.com, etc.)
+
+---
+
+# Erste Schritte
+## Installation
+### Schritt 1: Download
+Vorsicht: 
+* [de.wordpress.com](https://de.wordpress.com) => kommerzieller Hosting-Service
+* [de.wordpress.org](https://de.wordpress.org) => Wordpress-Download (open source)
+
+mehr dazu hier: [https://de.wordpress.com/com-vs-org/](https://de.wordpress.com/com-vs-org/) 
+
+---
+
+# Erste Schritte
+## Installation
+### Schritt 1: Download
+Download unter:
+* [https://de.wordpress.org/latest-de_DE.zip](https://de.wordpress.org/latest-de_DE.zip)
+
+---
+
+# Erste Schritte
+## Installation
+### Schritt 2: Datenbank vorbereiten
+Datenbankverwaltung:
+* http://127.0.0.1/phpmyadmin 
+
+* Benutzer: root
+* kein Passwort
+
+---
+
+# Erste Schritte
+## Installation
+### Schritt 2: Datenbank vorbereiten
+![Neue Datenbank](https://es-ist-ein-krauss.de/wordpress-schulung/04_new_database.png)]
+[http://localhost/phpmyadmin/server_privileges.php?adduser=1](http://localhost/phpmyadmin/server_privileges.php?adduser=1) 
+
+---
+
+# Erste Schritte
+## Installation
+### Schritt 3: Grundkonfiguration
+Wordpress-Installer: [http://127.0.0.1](http://127.0.0.1)
+
+---
+
+# Erste Schritte
+## Installation
+### Alternative
+Für die Entwicklungsumgebung zu Hause:
+* Xampp, Mampp, Lampp
+* Docker [docker-compose.yaml](http://ktshannon.com/how-to-setup-wordpress-locally-with-docker-phpmyadmin-included/)
+--
+
+<video width="560" height="420" controls>
+    <source src="https://es-ist-ein-krauss.de/wordpress-schulung/05_docker.mov" type="video/mp4">
+</video>
+
+---
+
+# Erste Schritte
+## In Frontend und Backend
+
+(kurze Erinnerung)
+
+**Frontend** <= was Besucher sehen
+* [http://127.0.0.1/](http://127.0.0.1/)
+
+**Backend** <= Arbeit und Content-pflege „hinter den Kulissen“
+* [http://127.0.0.1/wp-admin](http://127.0.0.1/wp-admin)
+
+---
+
+
+
+
 
 # Kontakt:
 ## Philipp Weißmann
