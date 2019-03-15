@@ -476,6 +476,10 @@ Das gleiche Bild:
 
 ---
 
+# Wordpress
+
+---
+
 # Wordpress ist:
 
 * ein Content-Management-System (CMS) mit Fokus auf das Bloggen
@@ -484,27 +488,36 @@ Das gleiche Bild:
 * open source ("GPL-2.0+"-Lizent)
 * erhältlich in 62 Sprachen
 
+???
+* auch aus dem Jahr 2003 (Dezember): Begriff "Web 2.0" 
+* User wird zum Prosumenten im "Mitmachweb"
+* "Goldenen Jahre" der privaten Webseiten und Blogs – weil einfacher und dynamisch
+
 ---
 
 # Wordpress ist:
-
-![Schweizer Taschenmesser](https://media.giphy.com/media/xT5LMxAxpGSb5AZt8A/giphy.gif)
-
----
-
-## 32,8 Prozent aller Webseiten basieren auf Wordpress
-
-(*Quelle: W3Techs (abgerufen am 11.1.2019), https://w3techs.com/technologies/overview/content_management/all*) 
+.center[![Schweizer Taschenmesser](https://media.giphy.com/media/xT5LMxAxpGSb5AZt8A/giphy.gif)]
 
 ???
-* Spricht irgendwie für WordPress
-* Spricht aber auch irgendwie dagegen
-* Andere sind Joomla (2. Platz mit 6 Prozent), Drupal, Typo 3, blankes HTML …
-* Knapp 60 Prozent der Webseiten, die ein CMS nutzen, verwenden Wordpress
+und dann kam Wordpress und entwickelte sich schnell zur eierlegenden Blogmilchsau
 
 ---
 
-# Wofür sich Wordpress eignet
+# .center[32,8 Prozent] 
+## .center[.red.bold[aller] Webseiten basieren auf Wordpress]
+
+.footnote[*Quelle: W3Techs (abgerufen am 11.1.2019), https://w3techs.com/technologies/overview/content_management/all*] 
+
+???
+* Verbreitung spricht für WordPress ...     **(Resourcen, Hilfestellungen)**
+* ... spricht aber auch irgendwie dagegen.   **(Sicherheit)**
+
+* Andere beliebte CMS sind Joomla (2. Platz mit 6 Prozent), Drupal, Shopify, Magento, Typo 3 ...
+* Knapp 60 Prozent der Webseiten, _die ein CMS nutzen_, verwenden Wordpress.
+
+---
+
+# Wofür sich Wordpress eignet:
 
 * Blogs
 * private Webseiten mit regelmäßigen Updates
@@ -513,14 +526,17 @@ Das gleiche Bild:
 
 ---
 
-# Wofür sich Wordpress nicht eignet
+# Wofür sich Wordpress nicht (so gut) eignet:
 
-* große, internationale Unternehmensseiten
-* komplexe Shop-Systeme mit ERP-Anbindungen
+* große mehrsprachige Unternehmensseiten
+* komplexe Shop-Systeme mit ERP-Anbindung
 * statische Webprojekte
 * Seiten mit besonderen spezifischen Anforderungen
 * Arbeiten mit vielen Medien/Dokumenten
 * Foren mit vielen Benutzern
+
+???
+Gibt's alles auch mit Wordpress! Ist aber halt in vielen Fällen nur ein Kompromiss.
 
 ---
 
@@ -536,32 +552,62 @@ Das gleiche Bild:
 ### 4. Funktionalitäten
 => Plugins
 
+???
+* (und 5.: Sonderseiten)
 
 ---
 
 # Grundlagen
 ## Aufbau
-.right[![Dateien und Verzeichnisse](https://es-ist-ein-krauss.de/wordpress-schulung/01_files_and_folders.png)]
+### 1. Wordpress
+.center[![Dateien und Verzeichnisse](https://es-ist-ein-krauss.de/wordpress-schulung/01_files_and_folders.png)]
+
+
+---
+
+# Grundlagen
+## Aufbau
 ### 1. Wordpress
 Neben den Core-Dateien, ist vor allem ein Verzeichnis für uns interessant:
 
-wp-content/
-* Plugins
-* Themes
-* Uploads
+wp-content:
+* plugins
+* themes
+* uploads
+
+???
+* Was das alles ist, schauen wir uns später an.
+* Wichtig nur: außer config.php passiert alles hier!
 
 ---
 
 # Grundlagen
 ## Aufbau
-.right[![Datenbank](https://es-ist-ein-krauss.de/wordpress-schulung/02_database.png)]
+### 1. Wordpress
+.center[![Datenbank](https://es-ist-ein-krauss.de/wordpress-schulung/02_database.png)]
+
+???
+* Prefix
+* Tabellen für:
+  * Kommentare
+  * Optionen
+  * Posts
+  * usw.
+
+---
+
+# Grundlagen
+## Aufbau
 ### 1. Wordpress
 Die Datenbank enthält:
 * Einstellungen
 * Inhalte
-* Beiträgestexte
+* Beitragstexte
 * Nutzer
 * Meta-Informationen
+
+???
+* Medien landen im Dateiverzeichnis
 
 ---
 
@@ -569,24 +615,21 @@ Die Datenbank enthält:
 ## Aufbau
 ### 2. Inhalte
 
-**Seiten:**
-* feststehende Inhalte
-* Evergreens mit oder ohne regelmäßigem Aktualisierungsbedarf\*
-* Beispiel: _Impressum_
-
-**Beiträge:**
-* regelmäßige Informationen
-* Content mit begrenzter Halbwertszeit\*
-* Beispiel: _Die 5 besten Death-Metal-Bands aus Franken_
+|`SEITEN`            | `BEITRÄGE`          |
+|-----------------------|-----------------------|
+|feststehende Inhalte |regelmäßige Informationen | 
+|Evergreens mit oder ohne regelmäßigem Aktualisierungsbedarf\*    |Content mit begrenzter Halbwertszeit\* |
+|Beispiel: _Impressum_    |Beispiel: _Die 5 besten Death-Metal-Bands aus Franken_ |
 
 ???
-\** mit Ausnahmen – Seiten: ohne Datumsangabe stets aktuelle – Beiträge: mit Erstellungsdatum, aber bei Bedarf Aktualisierungen
+* \*mit Ausnahmen 
+  * Seiten: ohne Datumsangabe, stets aktuell
+  * Beiträge: mit Erstellungsdatum (=implizite Halbwertszeit), aber bei Bedarf Aktualisierungen
 
 ---
 
 # Grundlagen
 ## Aufbau
-.right[![Design](https://es-ist-ein-krauss.de/wordpress-schulung/03_theme.png)]
 ### 3. Design
 sogenannte Themes bestimmen:
 * Look and Feel
@@ -594,35 +637,49 @@ sogenannte Themes bestimmen:
 * Anordnung der Elemente
 * zum Teil auch: Funktionalitäten
 
+???
+* Stichwort "Model-View-Controller" – ist Wordpress per Definition nicht, aber so kann man es sich vorstellen: Inhalt und Design sind getrennt voneinander
+* für richtiges MVC: Plugins wie Churro – da bin ich dann aber raus
+
 ---
 
 # Grundlagen
 ## Aufbau
-.right[![Vielseitigkeit](https://i.giphy.com/media/1hBWtlec4aAb37ggn8/giphy.webp)]
 ### 4. Funktionalitäten
-aktuell\* mehr als **_54.200 Plugins_** erweitern den Funktionsumfang – und verwandeln Wordpress in:
-* Forum oder soziales Netzwerk
+aktuell\* erweitern mehr als .red.bold[54.200 Plugins] den Wordpress-Funktionsumfang – und verwandeln es in:
+* Forum
+* soziales Netzwerk
 * Online-Shop
 * Wiki
-Crowdfunding-Plattform
+* Crowdfunding-Plattform
 * Buchungssystem 
+* Online-Galerie
 * …
 
-\*_Quelle: [Wordpress.org](https://wordpress.org/plugins/) (abgerufen am 11.1.2019)_
+.footnote[\* *Quelle: Wordpress.org (abgerufen am 11.1.2019), https://wordpress.org/plugins/*]
 
 ---
 
 # Grundlagen
 ## Aufbau
-### Außerdem
+### 4. Funktionalitäten
+.center[![Vielseitigkeit](https://i.giphy.com/media/1hBWtlec4aAb37ggn8/giphy.webp)]
 
-Viele Seiten bringt Wordpress automatisch mit:
+---
+
+# Grundlagen
+## Aufbau
+### 5. Sonderseiten
+
+Wordpress bringt vieles Weitere von Haus auf mit:
 * Kategorieübersicht
 * 404-Fehler
 * Suchergebnisse
-* etc.
+* ...
 
-Dazu später mehr.
+???
+* Gab kein 5. auf der Übersicht, ist auch eher so "meta".
+* Das schauen wir uns gleich live an.
 
 ---
 
@@ -643,29 +700,95 @@ Dazu später mehr.
 
 # Erste Schritte
 ## Installation
-### Voraussetzungen
-* eigener Server (zu Hause oder im Rechenzentrum)
-* allgemeine Hoster (1 & 1, all-inkl, Strato, etc.)
+### Varianten
 * spezialisierte Bloghoster (Raidboxes, wordpress.com, etc.)
+* allgemeine Hoster (1 & 1, all-inkl, Strato, etc.)
+* eigener Server (zu Hause oder im Rechenzentrum)
+
+???
+Details auf der nächsten Folie
 
 ---
 
 # Erste Schritte
 ## Installation
-### Schritt 1: Download
+### Voraussetzungen
+
+|`spezialisierter Bloghoster`   |`allgemeiner Hoster`       |`eigener Server`       |
+|----------------------------|-------------------------------|---------------------------|
+|**Vorteil:** Zuverlässigkeit, Support, Staging-Option |**Vorteil:** Kompromiss aus Kontrolle und Zuverlässigkeit |**Vorteil:** maximale Flexibilität |
+|**Nachteil:** reines Wordpress-Hosting, manchmal eingeschränkter Theme, Plugin und Dateizugriff |**Nachteil:** viel Kontrolle, aber nicht über alles |**Nachteil:** hoher Administrationsaufwand |
+
+???
+* 2.) oft mit 1-Klick-Installation
+* 2.) und 3.) evtl. mit File- und Datenbankinstallation  
+
+* Zeit für die Installation!
+* (je nach Zeit: kurze Pause?)
+
+---
+
+# Erste Schritte
+## Installation
+### lokale Test- und Entwicklungsumgebung
+Installation "zu Hause":
+* Xampp, Mampp, Lampp
+* Docker [docker-compose.yaml](http://ktshannon.com/how-to-setup-wordpress-locally-with-docker-phpmyadmin-included/)
+
+???
+* Docker
+
+---
+
+<video height="460" controls autoplay>
+    <source src="https://es-ist-ein-krauss.de/wordpress-schulung/05_docker.mov" type="video/mp4">
+</video>
+
+???
+* Docker
+* Wir verwenden hier die Variante "xampp"; bereits vorinstalliert
+
+---
+
+# Erste Schritte
+## Installation
+### lokale Test- und Entwicklungsumgebung 
+
+* Starten von "Xampp Control Panel"
+    * Starten von "Apache"
+    * Starten von "MySQL"
+
+.center[![xampp](https://es-ist-ein-krauss.de/wordpress-schulung/10_xampp.png)]
+
+???
+* praktisch: Wir sehen gleich auch die Ports
+
+---
+
+# Erste Schritte
+## Installation
+### Schritt 1: Download Wordpress
 Vorsicht: 
 * [de.wordpress.com](https://de.wordpress.com) => kommerzieller Hosting-Service
 * [de.wordpress.org](https://de.wordpress.org) => Wordpress-Download (open source)
 
-mehr dazu hier: [https://de.wordpress.com/com-vs-org/](https://de.wordpress.com/com-vs-org/) 
+.footnote[mehr dazu hier: [https://de.wordpress.com/com-vs-org/](https://de.wordpress.com/com-vs-org/)] 
 
 ---
 
 # Erste Schritte
 ## Installation
-### Schritt 1: Download
+### Schritt 1: Download Wordpress
 Download unter:
 * [https://de.wordpress.org/latest-de_DE.zip](https://de.wordpress.org/latest-de_DE.zip)
+
+Entpacken nach:\*
+* C:\xampp\htdocs 
+
+.footnote[\* Wordpress im Verzeichnis /wordpress –– alternativ: Installation ins Root-Verzeichnis "/"]
+
+???
+Ich hoffe, das ist auch unter C: installiert ...
 
 ---
 
@@ -683,45 +806,33 @@ Datenbankverwaltung:
 # Erste Schritte
 ## Installation
 ### Schritt 2: Datenbank vorbereiten
-![Neue Datenbank](https://es-ist-ein-krauss.de/wordpress-schulung/04_new_database.png)]
-[http://localhost/phpmyadmin/server_privileges.php?adduser=1](http://localhost/phpmyadmin/server_privileges.php?adduser=1) 
+.center[![Neue Datenbank](https://es-ist-ein-krauss.de/wordpress-schulung/04_new_database2.png)]
+
+???
+Menüpunkt (rechts) heißt "Benutzerkonten"
 
 ---
 
 # Erste Schritte
 ## Installation
 ### Schritt 3: Grundkonfiguration
-Wordpress-Installer: [http://127.0.0.1](http://127.0.0.1)
+Wordpress-Installer: [http://127.0.0.1/wordpress](http://127.0.0.1/wordpress)
 
 ---
 
 # Erste Schritte
-## Installation
-### Alternative
-Für die Entwicklungsumgebung zu Hause:
-* Xampp, Mampp, Lampp
-* Docker [docker-compose.yaml](http://ktshannon.com/how-to-setup-wordpress-locally-with-docker-phpmyadmin-included/)
---
-
-<video width="560" height="420" controls>
-    <source src="https://es-ist-ein-krauss.de/wordpress-schulung/05_docker.mov" type="video/mp4">
-</video>
-
----
-
-# Erste Schritte
-## In Frontend und Backend
-
-(kurze Erinnerung)
+## Wordpress-Frontend und -Backend
 
 **Frontend** <= was Besucher sehen
-* [http://127.0.0.1/](http://127.0.0.1/)
+* [http://127.0.0.1/wordpress](http://127.0.0.1/wordpress)
 
-**Backend** <= Arbeit und Content-pflege „hinter den Kulissen“
-* [http://127.0.0.1/wp-admin](http://127.0.0.1/wp-admin)
+**Backend** <= Arbeit und Contentpflege „hinter den Kulissen“
+* [http://127.0.0.1/wordpress/wp-admin](http://127.0.0.1/wordpress/wp-admin)
 
 ???
-Im Frontend: Hier sehen wir erstmal nicht viel. Es gibt:
+* kurze Erinnerung
+
+Frontend anschauen: Hier sehen wir erstmal nicht viel. Es gibt:
 * einen Titel
 * einen "Hallo Welt"-Beitrag
 * ein paar Links
@@ -766,35 +877,51 @@ Elemente einer Seite:
 # Erste Schritte 
 ## Im Backend
 
-In ähnlicher Form kann es auch weitere Inhaltstypen geben, die sogenannten `Custom Post Types` – die unterscheiden sich jeweils in den Feldern, die hier auszufüllen sind, im Design und je nach Theme auch in der Darstellung. Je nach Plugins und Themes könnten das beispielsweise sein:
+In ähnlicher Form kann es auch weitere Inhaltstypen geben, die sogenannten `Custom Post Types` – etwa für:
 * Portfolio
 * Referenzen
 * Kundenstimmen
 * Podcast-Episoden
-* und, und, und
+* ...
 
-Mehr dazu [hier](https://www.drweb.de/wordpress-intern-einstieg-custom-post-types-50402/)
+.footnote[Mehr dazu [hier](https://www.drweb.de/wordpress-intern-einstieg-custom-post-types-50402/).]
+
+???
+Custom Post Types von Haus auf z. B. für:
+* Medien
+
+Custom Post Types unterscheiden sich in:
+* den Feldern, die hier auszufüllen sind
+* im Design
+* je nach Theme auch in der Darstellung
 
 ---
 
 # Erste Schritte
 ## Aufgabe:
-* Anlegen und veröffentlichen **einer Seite**
+* Anlegen und veröffentlichen **mindestens einer Seite**
+
 * Anlegen und veröffentlichen von **mindestens zwei Beiträgen**, inklusive:
   * Beitragsbild
   * Kategorie
   * Schlagwörter
 
-Ideenlos beim Text? 
-  => [Franconian Ipsum](https://www.frankenipsum.de/index.php)
+.footnote[Ideenlos beim Text? => [Franconian Ipsum](https://www.frankenipsum.de/index.php)]
   
 ???
-Danach Check im Frontend: Wie sehen Seiten aus, wie Beiträge, was sind Kategorien, wie sehen Schlagwort-rchive aus, etc.
+Danach Check im Frontend: Wie sehen Seiten aus, wie Beiträge, was sind Kategorien, wie sehen Schlagwort-Archive aus, etc.
+Unterschiede?
 
 ---
 
 # Ein Wordpress? Mein Wordpress! 
 ## Level 0: Einstellungen  
+
+???
+* Uhrzeit, etwa 1:45 => Pause?
+* Jetzt wo Inhalte drin sind => Seite individualisieren
+
+--
 
 **Aufgabe:**
 * Erkunden der Einstellungen
@@ -807,8 +934,7 @@ Permalinks, Umstellung auf SSL, Diskussion (besonders im Hinblick auf die DSGVO 
 
 # Ein Wordpress? Mein Wordpress! 
 ## Level 1: Customizer
-[http://127.0.0.1/wp-admin/customize.php](http://127.0.0.1/wp-admin/customize.php)
-![Customizer](https://es-ist-ein-krauss.de/wordpress-schulung/06_customizer.png)]
+.center[![Customizer](https://es-ist-ein-krauss.de/wordpress-schulung/06_customizer.png)]]
 
 ???
 Erstmal nur: 
@@ -830,18 +956,30 @@ Teilweise dieselben Einstellungen wie eben
 ## Level 1: Customizer
 
 **Aufgabe:**
-* ein Logo hinzufügen (Beispieldatei gibt es hier)
+* ein Logo hinzufügen ([Beispieldatei](https://es-ist-ein-krauss.de/wordpress-schulung/09_logo.png))
 * Linkfarbe ändern
-* ein Schlagwörter - und ein Kalender-Widgets hinzufügen
+* ein Schlagwörter- und ein Kalender-Widget hinzufügen
+
+???
+* Möglichkeiten sind begrenzt => deshalb schauen wir mal, was ein Theme macht
+* darüber haben wir ja schon geredet
 
 ---
 
 # Ein Wordpress? Mein Wordpress! 
 ## Level 2: Themes
-.right[![Coral Dark](https://es-ist-ein-krauss.de/wordpress-schulung/07_coral_dark.png)]
+.left[![Coral Dark](https://es-ist-ein-krauss.de/wordpress-schulung/07_coral_dark2.png)]
+
+???
+* Layoutbeispiele: Hell/dunkel, einspaltig/mehrspaltig, große Bilder/keine Bilder, "magazin-ig"/"shop-ig", ...
+
+---
+
+# Ein Wordpress? Mein Wordpress! 
+## Level 2: Themes
 **Aufgabe:**
-* Coral Dark-Theme [installieren](http://127.0.0.1/wp-admin/theme-install.php?search=coral%20dark)
-* Seite "Customizen" 
+* "Coral Dark"-Theme [installieren](http://127.0.0.1/wordpress/wp-admin/theme-install.php?search=coral%20dark)
+* Seite individualisieren 
 
 ---
 
@@ -849,15 +987,16 @@ Teilweise dieselben Einstellungen wie eben
 ## Level 3: Plugins
 
 **Aufgabe:**
-* Suchen, installieren und testen des Classic Editor-Plugins. Was macht das Plugin?
-* Suchen, installieren und aktivieren eines Maintenance-Modus-Plugins.
+* Suchen, installieren und testen des Classic Editor-Plugins. Was macht es?
+* Suchen, installieren und aktivieren eines Maintenance-Mode-Plugins.
 
-**Bonusaufgabe:**
+**Fortgeschrittenen-Aufgabe:**
 * Suchen, installieren und testen eines Plugins, das Bilder beim Upload automatisch komprimiert.
 
 ???
-Anekdote zum Classic Editor, Hinweis, dass viele Plugins nach wie vor nur mit dem Classic Editor funktionieren
-Erklärung, warum Maintenance-Modus
+* Anekdote zum Classic Editor, Hinweis, dass viele Plugins nach wie vor nur mit dem Classic Editor funktionieren
+* Erklärung, warum Maintenance-Modus
+* Smush für Bilder – weil beliebter Fehler: Bilder zu groß, Seite zu langsam
 
 ---
 
@@ -870,26 +1009,61 @@ Essentielle Plugins:
 * SEO
 * Anti-Spam
 * DSGVO
+* ...
+
+---
+
+# Ein Wordpress? Mein Wordpress! 
+## Level 4: Page Builder
+**Page Builder**-Plugins sind oft an Themes gekoppelt und liefern vorgefertigten Content-Elemente für Drag'n'Drop-Seitengestaltung:
+
+.center[![Elementor](https://es-ist-ein-krauss.de/wordpress-schulung/08_elementor.png)]
 
 ---
 
 # Ein Wordpress? Mein Wordpress! 
 ## Level 4: Page Builder
 
+**Aufgabe:**
+* Elementor installieren
+* Seite oder Beitrag mit "Icon-Box", "Bild-Karussell" und "Video" aufbauen
+
+**Fortgeschrittenen-Aufgabe:**
+* Beitrag mit mehrspaltigem Layout anlegen
+
 ---
 
 # Ein Wordpress? Mein Wordpress! 
 ## Level 5: Child-Themes
 
+Mit Child-Themes:
+* Themes individualisieren
+* kompatibel zu zukünftigen Updates
+* eigener PHP-Code
+* eigenes CSS
+* quasi ein "eigenes Plugin-Theme-Kombinat auf Speed"
+
+???
+Nur der Vollständigkeit halber => würde den Rahmen sprengen
+
 ---
 
-# DSGVO
+# Kurze Pause?
 
-* Datenschutzerklärung/Impressum
-* SSL
-* Kommentare (Datenschutzerklärung, IP anonymisieren)
-* externe Ressourcen
-* Analytics, Matomo
+???
+Kurze Pause? Pause! Plugin installieren!
+
+---
+
+# Wordpress sicher machen
+## Was tun im Hackingfall?
+
+* Unterstützung durch den Hoster?
+* Wurde ein Backup gemacht?
+* Kann ich mich noch anmelden?
+* Wurden Seiten, Beiträge oder Links manipuliert?
+* Gibt es auffällige Plugins, Dateien, Benutzer?
+* Plugins zur [Malware](https://kb.sucuri.net/plugins/malware-scanner)- und [Template](https://wordpress.org/plugins/tac/)-Überprüfung
 
 ---
 
@@ -897,10 +1071,12 @@ Essentielle Plugins:
 ## Level 1
 
 * sichere Passwörter verwenden
-* Benutzername ≠ admin (oder root oder Teil der Domain)
+* Benutzername ≠ admin (auch verboten: root bzw. Teil der Domain)
 * regelmäßige Updates 
 * Plugins und Themes nur aus vertrauenswürdigen Quellen installieren
 * eingeschränkte Rechte für weitere Nutzer
+* SSL-Verschlüsselung
+
 
 ---
 
@@ -908,7 +1084,7 @@ Essentielle Plugins:
 ## Level 2
 
 * regelmäßige Backups (z. B. über den Hoster oder mit [UpdraftPlus](https://de.wordpress.org/plugins/updraftplus/))
-* 2FA = Zweifaktorauthentifi-zierung (etwa mit [Two Factor](https://de.wordpress.org/plugins/two-factor/))
+* 2FA = Zweifaktorauthentifizierung (etwa mit [Two Factor](https://de.wordpress.org/plugins/two-factor/))
 * Wordpress-Firewall/-Sicherheitsplugin (z. B. [Wordfence](https://de.wordpress.org/plugins/wordfence/), [Sucuri Security](https://de.wordpress.org/plugins/sucuri-scanner/) oder [All In One WP Security & Firewall](https://de.wordpress.org/plugins/all-in-one-wp-security-and-firewall/))
 
 ---
@@ -919,6 +1095,8 @@ Essentielle Plugins:
 * Login-Seite umbenennen (z. B. mit [WPS Hide Login](https://wordpress.org/plugins/wps-hide-login/) – vorher Backup!)
 * Geoblocking von Logins (etwa per [IP Geo Block](https://de.wordpress.org/plugins/ip-geo-block/))
 
+.footnote[Ansonsten: [das hier lesen](https://www.wpbeginner.com/wordpress-security/)]
+
 ---
 
 # Wordpress "sicher" machen
@@ -928,10 +1106,30 @@ Essentielle Plugins:
 
 ---
 
-# Ausblick
-* SEO
-* Theme- und Plugin-Entwicklung (per Boilerplates)
-* Wordpress-Kodex
+# Wordpress & DSGVO
+
+* Datenschutzerklärung und Impressum (Generatoren z. B. bei [RA Schwenke](https://datenschutz-generator.de/) oder bei [eRecht 24](https://www.e-recht24.de/impressum-generator.html))
+* SSL
+* Kommentare (Datenschutzerklärung, IP anonymisieren)
+* externe Ressourcen
+* "Cookie Notice"
+* Analytics, Matomo
+
+???
+* Tipp: Generator anschauen und Liste machen, was dort abgefragt wird, dann checken: Videos, Fonts, Maps, Analytics, etc.
+* SSL: Zertifikat, Let's Encrypt, Webseite umstellen Wordpress
+
+---
+
+# Weitere Optimierungen
+* SEO-Plugins: 
+    * [Yoast](https://de.wordpress.org/plugins/wordpress-seo/) 
+    * oder [All-in-one SEO](https://de.wordpress.org/plugins/all-in-one-seo-pack/)
+    * [XML-Sitemap](https://de.wordpress.org/plugins/xml-sitemap-feed/)
+* Entwicklung:
+    * [Theme-Boilerplate](http://html5blank.com/)
+    * [Plugin-Boilerplate](https://wppb.me/)
+    * [Wordpress-Kodex](https://codex.wordpress.org/)
 
 ---
 
