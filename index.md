@@ -685,8 +685,6 @@ Wordpress bringt vieles Weitere von Haus auf mit:
 
 # Grundlagen
 ## Hosting
---
-
 ### Voraussetzungen
 * dynamischer Webspace
   * Apache oder Nginx
