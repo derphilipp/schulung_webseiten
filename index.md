@@ -674,7 +674,7 @@ aktuell\* erweitern mehr als .red.bold[54.200 Plugins] den Wordpress-Funktionsum
 Wordpress bringt vieles Weitere von Haus auf mit:
 * Kategorieübersicht
 * 404-Fehler
-* Suchergebnisse
+* Suchergebnisseiten
 * ...
 
 ???
@@ -701,18 +701,6 @@ Wordpress bringt vieles Weitere von Haus auf mit:
 # Erste Schritte
 ## Installation
 ### Varianten
-* spezialisierte Bloghoster (Raidboxes, wordpress.com, etc.)
-* allgemeine Hoster (1 & 1, all-inkl, Strato, etc.)
-* eigener Server (zu Hause oder im Rechenzentrum)
-
-???
-Details auf der nächsten Folie
-
----
-
-# Erste Schritte
-## Installation
-### Voraussetzungen
 
 |`spezialisierter Bloghoster`   |`allgemeiner Hoster`       |`eigener Server`       |
 |----------------------------|-------------------------------|---------------------------|
@@ -720,11 +708,17 @@ Details auf der nächsten Folie
 |**Nachteil:** reines Wordpress-Hosting, manchmal eingeschränkter Theme, Plugin und Dateizugriff |**Nachteil:** viel Kontrolle, aber nicht über alles |**Nachteil:** hoher Administrationsaufwand |
 
 ???
-* 2.) oft mit 1-Klick-Installation
-* 2.) und 3.) evtl. mit File- und Datenbankinstallation  
+
+* spezialisierte Bloghoster (Raidboxes, wordpress.com, etc.)
+* allgemeine Hoster (1 & 1, all-inkl, Strato, etc.) – oft mit 1-Klick-Installation
+
+* eigener Server (zu Hause oder im Rechenzentrum) – evtl. mit File- und Datenbankinstallation  
 
 * Zeit für die Installation!
-* (je nach Zeit: kurze Pause?)
+
+---
+
+# kurze Pause?
 
 ---
 
@@ -734,15 +728,6 @@ Details auf der nächsten Folie
 Installation "zu Hause":
 * Xampp, Mampp, Lampp
 * Docker [docker-compose.yaml](http://ktshannon.com/how-to-setup-wordpress-locally-with-docker-phpmyadmin-included/)
-
-???
-* Docker
-
----
-
-<video height="460" controls autoplay>
-    <source src="https://es-ist-ein-krauss.de/wordpress-schulung/05_docker.mov" type="video/mp4">
-</video>
 
 ???
 * Docker
@@ -918,7 +903,6 @@ Unterschiede?
 ## Level 0: Einstellungen  
 
 ???
-* Uhrzeit, etwa 1:45 => Pause?
 * Jetzt wo Inhalte drin sind => Seite individualisieren
 
 --
@@ -984,11 +968,24 @@ Teilweise dieselben Einstellungen wie eben
 ---
 
 # Ein Wordpress? Mein Wordpress! 
-## Level 3: Plugins
+## Level 3: Widgets und Menüs
+
+* **Hinweis:** Darstellung und Positionen hängen vom Theme ab
+
+* **Aufgabe:**
+  * Hauptmenü anlegen mit Links auf:
+    * Impressum
+    * Datenschutzerklärung
+    * Kategorie "Allgemein"
+
+---
+
+# Ein Wordpress? Mein Wordpress! 
+## Level 4: Plugins
 
 **Aufgabe:**
-* Suchen, installieren und testen des Classic Editor-Plugins. Was macht es?
-* Suchen, installieren und aktivieren eines Maintenance-Mode-Plugins.
+* Suchen, installieren und testen des "Classic Editor"-Plugins. Was macht es?
+* Suchen, installieren und aktivieren eines "Maintenance Mode"-Plugins.
 
 **Fortgeschrittenen-Aufgabe:**
 * Suchen, installieren und testen eines Plugins, das Bilder beim Upload automatisch komprimiert.
@@ -1001,7 +998,7 @@ Teilweise dieselben Einstellungen wie eben
 ---
 
 # Ein Wordpress? Mein Wordpress! 
-## Level 3: Plugins
+## Level 4: Plugins
 Essentielle Plugins:
 * Backup
 * Sicherheit
@@ -1014,7 +1011,7 @@ Essentielle Plugins:
 ---
 
 # Ein Wordpress? Mein Wordpress! 
-## Level 4: Page Builder
+## Level 5: Page Builder
 **Page Builder**-Plugins sind oft an Themes gekoppelt und liefern vorgefertigten Content-Elemente für Drag'n'Drop-Seitengestaltung:
 
 .center[![Elementor](https://es-ist-ein-krauss.de/wordpress-schulung/08_elementor.png)]
@@ -1022,10 +1019,10 @@ Essentielle Plugins:
 ---
 
 # Ein Wordpress? Mein Wordpress! 
-## Level 4: Page Builder
+## Level 5: Page Builder
 
 **Aufgabe:**
-* Elementor installieren
+* "Elementor"-Plugin installieren
 * Seite oder Beitrag mit "Icon-Box", "Bild-Karussell" und "Video" aufbauen
 
 **Fortgeschrittenen-Aufgabe:**
@@ -1034,7 +1031,7 @@ Essentielle Plugins:
 ---
 
 # Ein Wordpress? Mein Wordpress! 
-## Level 5: Child-Themes
+## Level 6: Child-Themes
 
 Mit Child-Themes:
 * Themes individualisieren
@@ -1051,7 +1048,7 @@ Nur der Vollständigkeit halber => würde den Rahmen sprengen
 # Kurze Pause?
 
 ???
-Kurze Pause? Pause! Plugin installieren!
+Kurze Pause? [Pause!](https://www.es-ist-ein-krauss.de/wordpress-schulung/hack.zip)
 
 ---
 
@@ -1126,10 +1123,10 @@ Kurze Pause? Pause! Plugin installieren!
     * [Yoast](https://de.wordpress.org/plugins/wordpress-seo/) 
     * oder [All-in-one SEO](https://de.wordpress.org/plugins/all-in-one-seo-pack/)
     * [XML-Sitemap](https://de.wordpress.org/plugins/xml-sitemap-feed/)
-* Entwicklung:
+* eigene Entwicklung:
+    * [Wordpress-Kodex](https://codex.wordpress.org/)
     * [Theme-Boilerplate](http://html5blank.com/)
     * [Plugin-Boilerplate](https://wppb.me/)
-    * [Wordpress-Kodex](https://codex.wordpress.org/)
 
 ---
 
