@@ -683,8 +683,8 @@ Wordpress bringt vieles Weitere von Haus auf mit:
 
 ---
 
-# Erste Schritte
-## Installation
+# Grundlagen
+## Hosting
 --
 
 ### Voraussetzungen
@@ -698,8 +698,8 @@ Wordpress bringt vieles Weitere von Haus auf mit:
 
 ---
 
-# Erste Schritte
-## Installation
+# Grundlagen
+## Hosting
 ### Varianten
 
 |`spezialisierter Bloghoster`   |`allgemeiner Hoster`       |`eigener Server`       |
