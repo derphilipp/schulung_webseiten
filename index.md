@@ -539,6 +539,18 @@ und dann kam Wordpress und entwickelte sich schnell zur eierlegenden Blogmilchsa
 Gibt's alles auch mit Wordpress! Ist aber halt in vielen Fällen nur ein Kompromiss.
 
 ---
+# Ausblick
+## Was wir heute erreichen wollen:
+Wir bauen uns eine Webseite rund um das Thema **Fränkische Küche**. Titel der Seite, genaue Inhalte, die thematische Ausrichtung, ... das bleibt alles euch überlassen.
+
+Ein paar hilfreiche Texte und Bilder findet ihr [hier](https://es-ist-ein-krauss.de/wordpress-schulung/00_material.zip).
+
+???
+* Am besten gleich mal runterladen und entpacken, da kommen wir später darauf zurück.
+* 
+* Aber erst einmal: die graue Theorie ...
+
+---
 
 # Grundlagen
 ## Aufbau
@@ -714,9 +726,9 @@ Wordpress bringt vieles Weitere von Haus auf mit:
 
 * Zeit für die Installation!
 
----
+???
 
-# kurze Pause?
+kurze Pause?
 
 ---
 
@@ -724,7 +736,7 @@ Wordpress bringt vieles Weitere von Haus auf mit:
 ## Installation
 ### lokale Test- und Entwicklungsumgebung
 Installation "zu Hause":
-* Xampp, Mampp, Lampp
+* Xampp (Wampp), Mampp, Lampp
 * Docker [docker-compose.yaml](http://ktshannon.com/how-to-setup-wordpress-locally-with-docker-phpmyadmin-included/)
 
 ???
@@ -800,6 +812,19 @@ Menüpunkt (rechts) heißt "Benutzerkonten"
 ## Installation
 ### Schritt 3: Grundkonfiguration
 Wordpress-Installer: [http://127.0.0.1/wordpress](http://127.0.0.1/wordpress)
+
+???
+Warten, bis alle soweit sind.
+
+---
+
+# Erste Schritte
+## Installation
+### Aufgabe: Installation
+.center[![Hallo Welt](https://es-ist-ein-krauss.de/wordpress-schulung/04-1_hello_world.png)]
+
+???
+Warten, bis alle soweit sind.
 
 ---
 
@@ -882,18 +907,69 @@ Custom Post Types unterscheiden sich in:
 
 # Erste Schritte
 ## Aufgabe:
-* Anlegen und veröffentlichen **mindestens einer Seite**
+* Anlegen und veröffentlichen **mindestens einer Seite** (zum Beispiel "Über diese Webseite" oder [Impressum](https://www.e-recht24.de/impressum-generator.html))
 
 * Anlegen und veröffentlichen von **mindestens zwei Beiträgen**, inklusive:
   * Beitragsbild
   * Kategorie
   * Schlagwörter
+(zum Beispiel: Rezept-Beitrag, Top-3-Liste, Restaurant-Kritik, ...)
 
-.footnote[Ideenlos beim Text? => [Franconian Ipsum](https://www.frankenipsum.de/index.php)]
+.footnote[Ideenlos? => Verzeichnis "Bilder" und "Texte" oder [Franconian Ipsum](https://www.frankenipsum.de/index.php)]
   
 ???
 Danach Check im Frontend: Wie sehen Seiten aus, wie Beiträge, was sind Kategorien, wie sehen Schlagwort-Archive aus, etc.
 Unterschiede?
+
+---
+
+# Exkurs 
+## Bildrechte  
+###Unterschiede bei:
+* Art der und Pflicht zur Namensnennung
+* Bedingungen für Weitergabe
+* Bearbeitung
+* privater oder kommerzieller Verwendung
+
+
+--
+
+###Vorsicht!
+* lizenzfrei ≠ kostenlos
+
+
+--
+
+###Empfehlung:
+* [Creative Commons](https://creativecommons.org/licenses/?lang=de)
+* CC0 = Public Domain = gemeinfrei ("alles ist erlaubt!")
+
+???
+* Augen auf bei der Lizenzwahl
+* lizenzfrei bedeutet nicht kostenlos, sondern oft nur: einmal gekauft, öfter verwenden
+* Empfehlung: CC mit entsprechende Namensnennung etc.
+* oder: CC0 // Public Domain
+
+
+---
+
+# Exkurs 
+## Bildrechte  
+###Wo finde ich kostenlose Bilder?
+* [Unsplash](https://unsplash.com/)
+* [Pexels](http://pexels.com/)
+* [Pixabay](https://pixabay.com/de/)
+* [Google](https://www.google.com/imghp?tbm=isch&sxsrf=ACYBGNR5-uU_tafwvbdLFy1JfIduxLOKiQ:1570181677286&source=lnt&tbs=sur:fmc&sa=X&ved=0ahUKEwi91e3IpoLlAhW-wsQBHcrSDrkQpwUIJA&biw=1600&bih=805&dpr=1) (Bildersuche->Tools->freie Verwendung)
+
+--
+
+###Stockbilder zum Kauf?
+* [Adobe (Fotolia)](https://stock.adobe.com/de/?as_channel=dpcft&as_source=ft_web&as_campaign=de_interception&as_campclass=brand&as_content=lp_bluebar): 10 Gratisbilder
+* [Shutterstock](https://www.shutterstock.com/de/)
+* [Getty Images](https://www.gettyimages.de/)
+
+???
+Danach: Pause?
 
 ---
 
@@ -929,8 +1005,8 @@ Für später:
 * Zusätzliches CSS
 * Menüs
 
-??? 
-Teilweise dieselben Einstellungen wie eben
+???
+An die Beispielaufgabe denken!
 
 ---
 
@@ -1039,14 +1115,10 @@ Mit Child-Themes:
 * quasi ein "eigenes Plugin-Theme-Kombinat auf Speed"
 
 ???
-Nur der Vollständigkeit halber => würde den Rahmen sprengen
-
----
-
-# Kurze Pause?
-
-???
-Kurze Pause? [Pause!](https://www.es-ist-ein-krauss.de/wordpress-schulung/hack.zip)
+* Nur der Vollständigkeit halber => würde den Rahmen sprengen
+* _ 
+* Kurze Pause? [Pause!](https://www.es-ist-ein-krauss.de/wordpress-schulung/hack.zip)
+* Plugin aus dem Verzeichnis
 
 ---
 
