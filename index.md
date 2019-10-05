@@ -485,7 +485,7 @@ Das gleiche Bild:
 * ein Content-Management-System (CMS) mit Fokus auf das Bloggen
 * entwickelt von der Wordpress Foundation
 * 2003 erstmals erschienen
-* open source ("GPL-2.0+"-Lizent)
+* open source ("GPL-2.0+"-Lizenz)
 * erhältlich in 62 Sprachen
 
 ???
