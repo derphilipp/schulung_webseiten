@@ -476,7 +476,9 @@ Das gleiche Bild:
 
 ---
 
-# Wordpress
+.center[
+  # Wordpress
+  ![Wordpress Logo](img/wordpress_logo.png)]
 
 ---
 
@@ -503,17 +505,19 @@ und dann kam Wordpress und entwickelte sich schnell zur eierlegenden Blogmilchsa
 
 ---
 
-# .center[32,8 Prozent] 
+# .center[~~23 Prozent~~ (2015)] 
+# .center[~~35 Prozent~~ (2020)] 
+# .center[42,4 Prozent (2021)] 
 ## .center[.red.bold[aller] Webseiten basieren auf Wordpress]
 
-.footnote[*Quelle: W3Techs (abgerufen am 11.1.2019), https://w3techs.com/technologies/overview/content_management/all*] 
+.footnote[*Quelle: Hostpress (abgerufen am 6.10.2021), https://www.hostpress.de/wordpress-marktanteil/#marketshare-entwicklung*] 
 
 ???
 * Verbreitung spricht für WordPress ...     **(Resourcen, Hilfestellungen)**
 * ... spricht aber auch irgendwie dagegen.   **(Sicherheit)**
 
 * Andere beliebte CMS sind Joomla (2. Platz mit 6 Prozent), Drupal, Shopify, Magento, Typo 3 ...
-* Knapp 60 Prozent der Webseiten, _die ein CMS nutzen_, verwenden Wordpress.
+* rund 64 Prozent der Webseiten, _die ein CMS nutzen_, verwenden Wordpress. (2011 waren es 13 Prozent, 2015 schon 23 Prozent, 2020 noch 35 Prozent)
 
 ---
 
@@ -547,8 +551,7 @@ Ein paar hilfreiche Texte und Bilder findet ihr [hier](https://es-ist-ein-krauss
 
 ???
 * Am besten gleich mal runterladen und entpacken, da kommen wir später darauf zurück.
-* 
-* Aber erst einmal: die graue Theorie ...
+* * Aber erst einmal: die graue Theorie ...
 
 ---
 
@@ -697,15 +700,18 @@ Wordpress bringt vieles Weitere von Haus auf mit:
 
 # Grundlagen
 ## Hosting
-### Voraussetzungen
+### Voraussetzungen (laut Empfehlung von Wordpress.org)
 * dynamischer Webspace
   * Apache oder Nginx
-  * PHP (> 7.3)
+  * PHP (> 7.4)
+  * HTTPS
 
 * Datenbank
   * MySQL (> 5.6)
-  * oder: MariaDB (> 10.0)
+  * oder: MariaDB (> 10.1)
 
+???
+https://de.wordpress.org/about/requirements/
 ---
 
 # Grundlagen
@@ -715,7 +721,7 @@ Wordpress bringt vieles Weitere von Haus auf mit:
 |`spezialisierter Bloghoster`   |`allgemeiner Hoster`       |`eigener Server`       |
 |----------------------------|-------------------------------|---------------------------|
 |**Vorteil:** Zuverlässigkeit, Support, Staging-Option |**Vorteil:** Kompromiss aus Kontrolle und Zuverlässigkeit |**Vorteil:** maximale Flexibilität |
-|**Nachteil:** reines Wordpress-Hosting, manchmal eingeschränkter Theme, Plugin und Dateizugriff |**Nachteil:** viel Kontrolle, aber nicht über alles |**Nachteil:** hoher Administrationsaufwand |
+|**Nachteil:** reines Wordpress-Hosting, oft eingeschränkter Theme-, Plugin- und Dateizugriff |**Nachteil:** Kontrolle, aber nicht über alles; hoher Administrationsaufwand |**Nachteil:** *sehr* hoher Administrationsaufwand |
 
 ???
 
@@ -736,12 +742,9 @@ kurze Pause?
 ## Installation
 ### lokale Test- und Entwicklungsumgebung
 Installation "zu Hause":
-* Xampp (Wampp), Mampp, Lampp
+* Xampp (früher: Wampp), Mampp, Lampp
 * Docker [docker-compose.yaml](http://ktshannon.com/how-to-setup-wordpress-locally-with-docker-phpmyadmin-included/)
-
-???
-* Docker
-* Wir verwenden hier die Variante "xampp"; bereits vorinstalliert
+* für heute: Xampp => https://www.apachefriends.org/download.html
 
 ---
 
@@ -815,6 +818,8 @@ Wordpress-Installer: [http://127.0.0.1/wordpress](http://127.0.0.1/wordpress)
 
 ???
 Warten, bis alle soweit sind.
+Hier kann ein Rechteproblem auftauchen, war am Mac der Fall. Dann allen Ordnern (und allen Unterordnern) unterhalb von xamppfiles/wordpress Lese- und Schreibrechte geben und in die wp_config.php folgende Zeile (am Anfang) einfügen:
+```define('FS_METHOD', 'direct');```
 
 ---
 
@@ -907,16 +912,16 @@ Custom Post Types unterscheiden sich in:
 
 # Erste Schritte
 ## Aufgabe:
-* Anlegen und veröffentlichen **mindestens einer Seite** (zum Beispiel "Über diese Webseite" oder [Impressum](https://www.e-recht24.de/impressum-generator.html))
+Du erstellst ein fränkisches Food-Blog – mit Rezepten, Restaurantkritiken und mehr. Im Verzeichnis "Bilder" und "Texte" findest du Beispielinhalte – oder du bemühst das [Franconian Ipsum](https://www.frankenipsum.de/index.php).
 
-* Anlegen und veröffentlichen von **mindestens zwei Beiträgen**, inklusive:
+**Tu-Du's:**
+* anlegen und veröffentlichen **mindestens einer Seite** (zum Beispiel "Über diese Webseite" oder [Impressum](https://www.e-recht24.de/impressum-generator.html))
+  
+* anlegen und veröffentlichen von **mindestens zwei Beiträgen**, inklusive:
   * Beitragsbild
   * Kategorie
-  * Schlagwörter
-(zum Beispiel: Rezept-Beitrag, Top-3-Liste, Restaurant-Kritik, ...)
+  * Schlagwörter (zum Beispiel: Rezept-Beitrag, Top-3-Liste, Restaurant-Kritik, ...)
 
-.footnote[Ideenlos? => Verzeichnis "Bilder" und "Texte" oder [Franconian Ipsum](https://www.frankenipsum.de/index.php)]
-  
 ???
 Danach Check im Frontend: Wie sehen Seiten aus, wie Beiträge, was sind Kategorien, wie sehen Schlagwort-Archive aus, etc.
 Unterschiede?
@@ -981,7 +986,7 @@ Danach: Pause?
 
 --
 
-**Aufgabe:**
+**Tu-Du's:**
 * Erkunden der Einstellungen
 * Was würden Sie spontan ändern? Warum?
 
@@ -1013,7 +1018,7 @@ An die Beispielaufgabe denken!
 # Ein Wordpress? Mein Wordpress! 
 ## Level 1: Customizer
 
-**Aufgabe:**
+**Tu-Du's:**
 * ein Logo hinzufügen ([Beispieldatei](https://es-ist-ein-krauss.de/wordpress-schulung/09_logo.png))
 * Linkfarbe ändern
 * ein Schlagwörter- und ein Kalender-Widget hinzufügen
@@ -1035,7 +1040,7 @@ An die Beispielaufgabe denken!
 
 # Ein Wordpress? Mein Wordpress! 
 ## Level 2: Themes
-**Aufgabe:**
+**Tu-Du's:**
 * "Coral Dark"-Theme [installieren](http://127.0.0.1/wordpress/wp-admin/theme-install.php?search=coral%20dark)
 * Seite individualisieren 
 
@@ -1046,7 +1051,7 @@ An die Beispielaufgabe denken!
 
 * **Hinweis:** Darstellung und Positionen hängen vom Theme ab
 
-* **Aufgabe:**
+* **Tu-Du's:**
   * Hauptmenü anlegen mit Links auf:
     * Impressum
     * Datenschutzerklärung
@@ -1057,12 +1062,12 @@ An die Beispielaufgabe denken!
 # Ein Wordpress? Mein Wordpress! 
 ## Level 4: Plugins
 
-**Aufgabe:**
-* Suchen, installieren und testen des "Classic Editor"-Plugins. Was macht es?
-* Suchen, installieren und aktivieren eines "Maintenance Mode"-Plugins.
+**Tu-Du's:**
+* suchen, installieren und testen des "Classic Editor"-Plugins. Was macht es?
+* suchen, installieren und aktivieren eines "Maintenance Mode"-Plugins.
 
-**Fortgeschrittenen-Aufgabe:**
-* Suchen, installieren und testen eines Plugins, das Bilder beim Upload automatisch komprimiert.
+**Fortgeschrittenen-Tu-Du's:**
+* suchen, installieren und testen eines Plugins, das Bilder beim Upload automatisch komprimiert.
 
 ???
 * Anekdote zum Classic Editor, Hinweis, dass viele Plugins nach wie vor nur mit dem Classic Editor funktionieren
@@ -1095,11 +1100,11 @@ Essentielle Plugins:
 # Ein Wordpress? Mein Wordpress! 
 ## Level 5: Page Builder
 
-**Aufgabe:**
+**Tu-Du's:**
 * "Elementor"-Plugin installieren
 * Seite oder Beitrag mit "Icon-Box", "Bild-Karussell" und "Video" aufbauen
 
-**Fortgeschrittenen-Aufgabe:**
+**Fortgeschrittenen-Tu-Du's:**
 * Beitrag mit mehrspaltigem Layout anlegen
 
 ---
