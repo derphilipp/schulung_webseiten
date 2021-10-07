@@ -221,7 +221,7 @@ Philipp Weißmann und Jürgen Krauß
 
 * `hugo new site hugo-webseite`
 * Theme installieren,
-  * Hier: [Theme Ananke](https://github.com/budparr/gohugo-theme-ananke/archive/2.40.zip)
+  * Hier: [Theme Ananke](https://github.com/theNewDynamic/gohugo-theme-ananke/archive/refs/tags/v2.7.0.zip)
   * Entpacken nach *themes/ananke* (ggf. Verzeichnisname ändern)
 * Anpassen von `config.toml`
 
@@ -232,7 +232,7 @@ title = "Meine wunderbare Homepage"
 theme = "ananke"
 ```
 
-* Praxistipp: Theme via Git als Submodul einbinden!
+* Praxistipp: Theme via Hugo Modulen (alternativ Git als Submodul) einbinden!
 
 ---
 
@@ -394,19 +394,19 @@ Alle Inhalte sind in Markdown geschrieben und werden als HTML dargestellt.
 
 * Das Verzeichnis `static` wird zum Speichern statischer Inhalte verwendet
 * Auch Unterverzeichnisse möglich
-* Beispiel: Lege Bilddatei unter `static/img/igel.jpg` ab
-* Referenziere diese in einer neuen Seite: `hugo new post/igel.md`
+* Beispiel: Lege Bilddatei unter `static/img/cat.jpg` ab
+* Referenziere diese in einer neuen Seite: `hugo new post/cat.md`
 
 ```md
-Hier ist ein Bild eines Igels:
-![Alt Text für Barrierefreiheit!](/img/igel.jpg "Mouseover-Text")
+Hier ist ein Bild einer Katze:
+![Alt Text für Barrierefreiheit!](/img/cat.jpg "Mouseover-Text")
 
 Das gleiche Bild:
-![alt text][igel]
+![alt text][cat]
 
 ...
 
-[igel]: /img/igel.jpg "Mouseover-Text"
+[igel]: /img/cat.jpg "Mouseover-Text"
 ```
 
 ---
@@ -426,6 +426,7 @@ Das gleiche Bild:
   * Settings
   * Github Pages
   * Source auf `master branch` setzen
+  * Anmerkung: Bei neueren Profilen statt `master` -> `main` 
 
 ---
 
