@@ -748,6 +748,9 @@ Installation "zu Hause":
 * für heute: Xampp => https://www.apachefriends.org/download.html
 * oder: https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/8.0.11/xampp-portable-windows-x64-8.0.11-1-VS16.zip/download
 
+???
+Wichtig bei Portable-Installationen: setup_xampp.bat ausführen!
+
 ---
 
 # Erste Schritte
