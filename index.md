@@ -214,6 +214,7 @@ Philipp Weißmann und Jürgen Krauß
 * Paketmanager: `apt install hugo`, `pacman S hugo`, etc.
 * Homebrew: `brew install hugo`
 * Installationsanleitung unter Windows: [https://gohugo.io/getting-started/installing/](https://gohugo.io/getting-started/installing/)
+* Empfehlung: "Extended Version" laden & installieren für erweiterte Features
 
 ---
 
@@ -223,6 +224,7 @@ Philipp Weißmann und Jürgen Krauß
 * Theme installieren,
   * Hier: [Theme Ananke](https://github.com/theNewDynamic/gohugo-theme-ananke/archive/refs/tags/v2.7.0.zip)
   * Entpacken nach *themes/ananke* (ggf. Verzeichnisname ändern)
+  * Achtung: Dieses Theme funktioniert in der aktuellen Version nur mit der "extended Version" von Hugo
 * Anpassen von `config.toml`
 
 ```
